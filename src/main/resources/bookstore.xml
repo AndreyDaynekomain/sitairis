@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="bookstore.xsd">
+    <book id="1" category="programming">
+        <title>Effective Java</title>
+        <author>
+            <firstName>Joshua</firstName>
+            <lastName>Bloch</lastName>
+        </author>
+        <publisher>
+            <name>Addison-Wesley</name>
+            <year>2008</year>
+        </publisher>
+        <price currency="USD">45.00</price>
+    </book>
+    <book id="2" category="programming">
+        <title>Java Concurrency in Practice</title>
+        <author>
+            <firstName>Brian</firstName>
+            <lastName>Goetz</lastName>
+        </author>
+        <publisher>
+            <name>Addison-Wesley</name>
+            <year>2006</year>
+        </publisher>
+        <price currency="USD">55.00</price>
+    </book>
+    <book id="3" category="software-engineering">
+        <title>Clean Code</title>
+        <author>
+            <firstName>Robert</firstName>
+            <lastName>Martin</lastName>
+        </author>
+        <publisher>
+            <name>Prentice Hall</name>
+            <year>2008</year>
+        </publisher>
+        <price currency="USD">40.00</price>
+    </book>
+    <storeLocation>
+        <city>New York</city>
+        <address>123 Main St</address>
+    </storeLocation>
+</bookstore>
