@@ -5,8 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    // Run the Ant build
-                    ant run
+                     sh './build.sh'
                 }
             }
         }
