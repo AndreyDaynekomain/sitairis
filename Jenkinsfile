@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // Убедитесь, что Ant установлен и доступен
-                    sh 'ant run'
+                    ant src/main/java/org/daynekq/DOMParserExample.java
                 }
             }
         }
