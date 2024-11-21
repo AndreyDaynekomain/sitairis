@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 cd src/main/java/org/daynekq
-                ant -d build
+                ant -h
                 echo 'Building..'
             }
         }
