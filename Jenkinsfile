@@ -4,10 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                script {
-                    // Убедитесь, что Ant установлен и доступен
-                    ant src/main/java/org/daynekq/DOMParserExample.java
-                }
+                ant src/main/java/org/daynekq/DOMParserExample.java
             }
         }
     }
