@@ -4,20 +4,20 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                cd src/main/java/org/daynekq
-                ant -h
-                echo 'Building..'
+                script {
+                    // Убедитесь, что Ant установлен и доступен
+                    sh 'ant run'
+                }
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
+    }
+
+    post {
+        success {
+            echo 'Сборка и запуск прошли успешно!'
         }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
+        failure {
+            echo 'Сборка завершилась с ошибкой.'
         }
     }
 }
